@@ -82,12 +82,10 @@
 		24E6DF751D6831520072D4DC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6DF721D6831520072D4DC /* SwiftyJSON.framework */; };
 		24EA5DB11D2D39A700F3E867 /* SingleFooWithUnregisteredType.json in Resources */ = {isa = PBXBuildFile; fileRef = 24EA5DB01D2D39A100F3E867 /* SingleFooWithUnregisteredType.json */; };
 		24EA5DB21D2D39A800F3E867 /* SingleFooWithUnregisteredType.json in Resources */ = {isa = PBXBuildFile; fileRef = 24EA5DB01D2D39A100F3E867 /* SingleFooWithUnregisteredType.json */; };
-		6B887DB51EFB00BA005156D5 /* AFIncrementalStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B887DB11EFB00BA005156D5 /* AFIncrementalStore.h */; };
-		6B887DB61EFB00BA005156D5 /* AFIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B887DB21EFB00BA005156D5 /* AFIncrementalStore.m */; };
-		6B887DB71EFB00BA005156D5 /* AFRESTClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B887DB31EFB00BA005156D5 /* AFRESTClient.h */; };
-		6B887DB81EFB00BA005156D5 /* AFRESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B887DB41EFB00BA005156D5 /* AFRESTClient.m */; };
-		6B887DBC1EFB01F2005156D5 /* AFIncrementalStore.h.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B887DBA1EFB01F2005156D5 /* AFIncrementalStore.h.swift */; };
-		6B887DBD1EFB01F2005156D5 /* AFIncrementalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B887DBB1EFB01F2005156D5 /* AFIncrementalStore.swift */; };
+		6B887DC71EFB1EE4005156D5 /* AFIncrementalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B887DC11EFB1EE4005156D5 /* AFIncrementalStore.swift */; };
+		6B887DC81EFB1EE4005156D5 /* AFRESTClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B887DC21EFB1EE4005156D5 /* AFRESTClient.h */; };
+		6B887DC91EFB1EE4005156D5 /* AFRESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B887DC31EFB1EE4005156D5 /* AFRESTClient.m */; };
+		6B887DCB1EFB1F5B005156D5 /* AFIncrementalStoreHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B887DCA1EFB1F5B005156D5 /* AFIncrementalStoreHTTPClient.swift */; };
 		D302A6531DA13BAF00420C48 /* Spine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D373F7A319B224BB00275AFC /* Spine.swift */; };
 		D302A6541DA13BAF00420C48 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331836B19B2302500936FBB /* Query.swift */; };
 		D302A6551DA13BAF00420C48 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3452C2E1AD18E6900CD413B /* Operation.swift */; };
@@ -234,12 +232,10 @@
 		24E6DF711D6831520072D4DC /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		24E6DF721D6831520072D4DC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		24EA5DB01D2D39A100F3E867 /* SingleFooWithUnregisteredType.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleFooWithUnregisteredType.json; sourceTree = "<group>"; };
-		6B887DB11EFB00BA005156D5 /* AFIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFIncrementalStore.h; sourceTree = "<group>"; };
-		6B887DB21EFB00BA005156D5 /* AFIncrementalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFIncrementalStore.m; sourceTree = "<group>"; };
-		6B887DB31EFB00BA005156D5 /* AFRESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFRESTClient.h; sourceTree = "<group>"; };
-		6B887DB41EFB00BA005156D5 /* AFRESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFRESTClient.m; sourceTree = "<group>"; };
-		6B887DBA1EFB01F2005156D5 /* AFIncrementalStore.h.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFIncrementalStore.h.swift; sourceTree = "<group>"; };
-		6B887DBB1EFB01F2005156D5 /* AFIncrementalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFIncrementalStore.swift; sourceTree = "<group>"; };
+		6B887DC11EFB1EE4005156D5 /* AFIncrementalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFIncrementalStore.swift; sourceTree = "<group>"; };
+		6B887DC21EFB1EE4005156D5 /* AFRESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFRESTClient.h; sourceTree = "<group>"; };
+		6B887DC31EFB1EE4005156D5 /* AFRESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFRESTClient.m; sourceTree = "<group>"; };
+		6B887DCA1EFB1F5B005156D5 /* AFIncrementalStoreHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFIncrementalStoreHTTPClient.swift; sourceTree = "<group>"; };
 		D307FBED1A97756700EE0FAC /* SingleFooIncludingBars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SingleFooIncludingBars.json; sourceTree = "<group>"; };
 		D312E2F719BB83A8004BB3E0 /* SerializingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializingTests.swift; sourceTree = "<group>"; };
 		D32EA6DC1BCBD5930076CFA5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -405,12 +401,10 @@
 		6B887DB91EFB00BF005156D5 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				6B887DBA1EFB01F2005156D5 /* AFIncrementalStore.h.swift */,
-				6B887DBB1EFB01F2005156D5 /* AFIncrementalStore.swift */,
-				6B887DB11EFB00BA005156D5 /* AFIncrementalStore.h */,
-				6B887DB21EFB00BA005156D5 /* AFIncrementalStore.m */,
-				6B887DB31EFB00BA005156D5 /* AFRESTClient.h */,
-				6B887DB41EFB00BA005156D5 /* AFRESTClient.m */,
+				6B887DC11EFB1EE4005156D5 /* AFIncrementalStore.swift */,
+				6B887DC21EFB1EE4005156D5 /* AFRESTClient.h */,
+				6B887DC31EFB1EE4005156D5 /* AFRESTClient.m */,
+				6B887DCA1EFB1F5B005156D5 /* AFIncrementalStoreHTTPClient.swift */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -571,9 +565,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B887DB51EFB00BA005156D5 /* AFIncrementalStore.h in Headers */,
 				D373F78E19B2249900275AFC /* Spine.h in Headers */,
-				6B887DB71EFB00BA005156D5 /* AFRESTClient.h in Headers */,
+				6B887DC81EFB1EE4005156D5 /* AFRESTClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1002,11 +995,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B887DC71EFB1EE4005156D5 /* AFIncrementalStore.swift in Sources */,
 				D39890F51C3D571F005CFB93 /* ResourceFactory.swift in Sources */,
+				6B887DCB1EFB1F5B005156D5 /* AFIncrementalStoreHTTPClient.swift in Sources */,
 				D341907719D30BA4007B38D6 /* Routing.swift in Sources */,
 				D35468821AD429D7000E8B6F /* Errors.swift in Sources */,
-				6B887DB81EFB00BA005156D5 /* AFRESTClient.m in Sources */,
 				D3452C311AD19B0900CD413B /* Logging.swift in Sources */,
+				6B887DC91EFB1EE4005156D5 /* AFRESTClient.m in Sources */,
 				D331836C19B2302500936FBB /* Query.swift in Sources */,
 				D373F7A619B224BB00275AFC /* Spine.swift in Sources */,
 				D35F9D411A53014500E5FF97 /* DeserializeOperation.swift in Sources */,
@@ -1014,14 +1009,11 @@
 				D3DFBB6519B9DC64009785BE /* Networking.swift in Sources */,
 				D373F7A519B224BB00275AFC /* Resource.swift in Sources */,
 				D35F9D3C1A52FCBB00E5FF97 /* ResourceCollection.swift in Sources */,
-				6B887DBC1EFB01F2005156D5 /* AFIncrementalStore.h.swift in Sources */,
 				D3B96D621C32B7D300910F83 /* KeyFormatter.swift in Sources */,
 				D39929EB1A52F3A0008BF0A9 /* ResourceField.swift in Sources */,
 				D35F9D431A53016000E5FF97 /* SerializeOperation.swift in Sources */,
 				D35F9D481A532EC600E5FF97 /* ValueFormatter.swift in Sources */,
-				6B887DBD1EFB01F2005156D5 /* AFIncrementalStore.swift in Sources */,
 				D3452C2F1AD18E6900CD413B /* Operation.swift in Sources */,
-				6B887DB61EFB00BA005156D5 /* AFIncrementalStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
