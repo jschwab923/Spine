@@ -4,7 +4,7 @@
 
 import CoreData
 
-protocol AFIncrementalStoreHTTPClient : NSObject {
+protocol AFIncrementalStoreHTTPClient {
     
     ///-----------------------
     /// @name Required Methods
@@ -71,7 +71,7 @@ protocol AFIncrementalStoreHTTPClient : NSObject {
      
      @return An `NSURLRequest` object corresponding to the specified fetch request.
      */
-    func requestForFetchRequest(fetchRequest:NSFetchRequest!, withContext context:NSManagedObjectContext!) -> NSMutableURLRequest!
+    func requestForFetchRequest(fetchRequest:NSFetchRequest<NSFetchRequestResult>!, withContext context:NSManagedObjectContext!) -> NSMutableURLRequest!
     
     /**
      Returns a URL request object with a given HTTP method for a particular managed object. This method is used in `AFIncrementalStore -newValuesForObjectWithID:withContext:error`.
@@ -116,22 +116,22 @@ protocol AFIncrementalStoreHTTPClient : NSObject {
      
      @return An `NSDictionary` containing the attributes for a representation, based on the given managed object.
      */
-    optional func representationOfAttributes(attributes:NSDictionary!, ofManagedObject managedObject:NSManagedObject!) -> NSDictionary!
+    func representationOfAttributes(attributes:NSDictionary!, ofManagedObject managedObject:NSManagedObject!) -> NSDictionary!
     
     /**
      
      */
-    optional func requestForInsertedObject(insertedObject:NSManagedObject!) -> NSMutableURLRequest!
+    func requestForInsertedObject(insertedObject:NSManagedObject!) -> NSMutableURLRequest!
     
     /**
      
      */
-    optional func requestForUpdatedObject(updatedObject:NSManagedObject!) -> NSMutableURLRequest!
+    func requestForUpdatedObject(updatedObject:NSManagedObject!) -> NSMutableURLRequest!
     
     /**
      
      */
-    optional func requestForDeletedObject(deletedObject:NSManagedObject!) -> NSMutableURLRequest!
+    func requestForDeletedObject(deletedObject:NSManagedObject!) -> NSMutableURLRequest!
     
     /**
      Returns whether the client should fetch remote attribute values for a particular managed object. This method is consulted when a managed object faults on an attribute, and will call `-requestWithMethod:pathForObjectWithID:withContext:` if `YES`.
@@ -141,7 +141,7 @@ protocol AFIncrementalStoreHTTPClient : NSObject {
      
      @return `YES` if an HTTP request should be made, otherwise `NO.
      */
-    optional func shouldFetchRemoteAttributeValuesForObjectWithID(objectID:NSManagedObjectID!, inManagedObjectContext context:NSManagedObjectContext!) -> Bool
+    func shouldFetchRemoteAttributeValuesForObjectWithID(objectID:NSManagedObjectID!, inManagedObjectContext context:NSManagedObjectContext!) -> Bool
     
     /**
      Returns whether the client should fetch remote relationship values for a particular managed object. This method is consulted when a managed object faults on a particular relationship, and will call `-requestWithMethod:pathForRelationship:forObjectWithID:withContext:` if `YES`.
@@ -152,6 +152,6 @@ protocol AFIncrementalStoreHTTPClient : NSObject {
      
      @return `YES` if an HTTP request should be made, otherwise `NO.
      */
-    optional func shouldFetchRemoteValuesForRelationship(relationship:NSRelationshipDescription!, forObjectWithID objectID:NSManagedObjectID!, inManagedObjectContext context:NSManagedObjectContext!) -> Bool
+    func shouldFetchRemoteValuesForRelationship(relationship:NSRelationshipDescription!, forObjectWithID objectID:NSManagedObjectID!, inManagedObjectContext context:NSManagedObjectContext!) -> Bool
     
 }
